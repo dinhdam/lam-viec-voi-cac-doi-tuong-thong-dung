@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let today = Date.now();
+    let birthday = new Date(1992,4,24);
+    let time = today - birthday;
+    secs = Math.round((time/1000));
+    mins = Math.round((time/1000/60));
+    hours = Math.round((time/1000/60/60));
+    days = Math.round((time/1000/60/60/24));
+    months = Math.round(time/1000/60/60/24/30);
+    years = Math.round((time/1000/60/60/24/30/12));
+    console.log('Tôi đã sống được ' + years + ' năm');
+    console.log('Tôi đã sống được ' + months + ' tháng');
+    console.log('Tôi đã sống được ' + days + ' ngày');
+    console.log('Tôi đã sống được ' + hours + ' giờ');
+    console.log('Tôi đã sống được ' + mins + ' phút');
+    console.log('Tôi đã sống được ' + secs + ' giây');
+</script>
+</body>
+</html>
